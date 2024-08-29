@@ -9,6 +9,7 @@ class RoomAdmin(admin.ModelAdmin):
         "name",
         "rooms",
         "pet_friendly",
+        "total_amenities",
         "created_at",
         "updated_at",
     )
