@@ -11,7 +11,7 @@ class Review(CommonModel):
         on_delete=models.CASCADE,
         related_name="reviews",
     )
-    rooms = models.ForeignKey(
+    room = models.ForeignKey(
         "rooms.Room",
         null=True,
         blank=True,

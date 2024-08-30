@@ -3,7 +3,7 @@ from .models import Room, Amenity
 
 
 @admin.action(description="Set all prices to 0")
-def reset_ratings(model_admin, request, rooms):
+def reset_prices(model_admin, request, rooms):
     for room in rooms.all():
         room.price = 0
         room.save()
@@ -12,7 +12,7 @@ def reset_ratings(model_admin, request, rooms):
 @admin.register(Room)
 class RoomAdmin(admin.ModelAdmin):
 
-    actions = (reset_ratings,)
+    actions = (reset_prices,)
 
     list_display = (
         "name",
@@ -31,7 +31,11 @@ class RoomAdmin(admin.ModelAdmin):
         "amenities",
         "updated_at",
     )
-    search_fields = ("owner__username",)
+    search_fields = (
+        "owner__username",
+        "^name",
+        "=price",
+    )
 
 
 @admin.register(Amenity)
