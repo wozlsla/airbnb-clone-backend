@@ -1,0 +1,8 @@
+### Categories
+
+GET POST /categories
+GET PUT DELETE /categories/1
+
+### Rooms
+
+GET POST /amenities
