@@ -7,3 +7,8 @@ GET PUT DELETE /categories/1
 
 GET POST /amenities
 GET PUT DELETE /amenities/1
+
+## Experiences
+
+GET POST /perks
+GET PUT DELETE /perks/1
