@@ -6,6 +6,7 @@ GET PUT DELETE /categories/1
 ### Rooms
 
 GET /rooms
+GET /rooms/1
 GET POST /amenities
 GET PUT DELETE /amenities/1
 
