@@ -9,6 +9,7 @@ GET /rooms
 GET /rooms/1
 GET POST /amenities
 GET PUT DELETE /amenities/1
+GET /rooms/1/reviews
 
 ## Experiences
 
