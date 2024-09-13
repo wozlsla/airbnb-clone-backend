@@ -11,6 +11,8 @@ GET POST /amenities
 GET PUT DELETE /amenities/1
 GET /rooms/1/reviews
 GET /rooms/1/amenities
+POST /rooms/1/photos
+DELETE /rooms/1/photos/1
 
 ## Experiences
 
