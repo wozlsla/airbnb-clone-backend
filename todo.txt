@@ -18,3 +18,9 @@ DELETE /rooms/1/photos/1
 
 GET POST /perks
 GET PUT DELETE /perks/1
+
+### Whishlists
+
+GET POST /wishlists
+GET PUT DELETE /wishlists/1
+PUT /wishlist/1/rooms/1
