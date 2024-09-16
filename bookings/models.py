@@ -5,14 +5,14 @@ from common.models import CommonModel
 class Booking(CommonModel):
     """Booking Model Definition"""
 
-    class BookingKingChoices(models.TextChoices):
+    class BookingKindChoices(models.TextChoices):
 
         ROOM = "room", "Room"
         EXPERIENCE = "experience", "Experience"
 
     kind = models.CharField(
         max_length=15,
-        choices=BookingKingChoices.choices,
+        choices=BookingKindChoices.choices,
     )
     user = models.ForeignKey(
         "users.User",
