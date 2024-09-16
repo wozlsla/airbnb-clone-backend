@@ -24,3 +24,7 @@ GET PUT DELETE /perks/1
 GET POST /wishlists
 GET PUT DELETE /wishlists/1
 PUT /wishlist/1/rooms/1
+
+### Bookings
+
+GET POST /rooms/1/bookings
