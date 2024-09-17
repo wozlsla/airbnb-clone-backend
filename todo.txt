@@ -32,3 +32,5 @@ GET POST /rooms/1/bookings
 ### Users
 GET PUT /me
 POST /users
+GET /users/@username
+PUT /users/change-password
