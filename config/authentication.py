@@ -5,8 +5,7 @@ from users.models import User
 
 class TrustMeBroAuthentication(BaseAuthentication):
 
-    # authenticate method를 재정의(override) 해야 함
-    def authenticate(self, request):  # 예는 user가 없는 request obj임
+    def authenticate(self, request):
         username = request.headers.get("Trust-Me")
         if not username:
             return None
@@ -14,4 +13,4 @@ class TrustMeBroAuthentication(BaseAuthentication):
             user = User.objects.get(username=username)
             return (user, None)
         except User.DoesNotExist:
-            raise AuthenticationFailed
+            raise AuthenticationFailed(f"No user {username}")
