@@ -28,3 +28,6 @@ PUT /wishlist/1/rooms/1
 ### Bookings
 
 GET POST /rooms/1/bookings
+
+### Users
+GET PUT /me
