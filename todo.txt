@@ -34,3 +34,5 @@ GET PUT /me
 POST /users
 GET /users/@username
 PUT /users/change-password
+POST /users/log-in
+POST /users/log-out
