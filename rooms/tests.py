@@ -1,4 +1,5 @@
 from rest_framework.test import APITestCase
+from users.models import User
 from . import models
 
 
@@ -150,3 +151,23 @@ class TestAmenity(APITestCase):
 
         response = self.client.delete(self.URL)
         self.assertEqual(response.status_code, 204)
+
+
+class TestRooms(APITestCase):
+
+    def setUp(self):
+        user = User.objects.create(username="test")
+        user.set_password("123")
+        user.save()
+        self.user = user  # save in the class -> class 안에 있는 method에서 접근 가능
+
+    def test_create_room(self):
+        # authentication protection
+        response = self.client.post("/api/v1/rooms/")
+
+        self.assertEqual(response.status_code, 403)
+
+        self.client.force_login(self.user)
+
+        response = self.client.post("/api/v1/rooms/")
+        print(response.json())
