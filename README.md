@@ -2,10 +2,9 @@
 
 ### Skills
 - **Back-end**  
-Python, Django, Django REST Framework
-<span style="color: #808080">, Graphene GraphQL</span>  
+Python, Django, Django REST Framework, Graphene GraphQL   
 
-- <span style="color: #808080">Front-end : ReactJS + Chakra UI + Render</span>   
+- **Front-end**
 
 <br/>
 <br/>
