@@ -10,4 +10,4 @@ Python, Django, Django REST Framework, Graphene GraphQL
 <br/>
   
 ### 📝 Link  
-Notion : Lectures / [Django](https://ninth-agenda-0c7.notion.site/Django-105d382c218d807da80adc811e5ac0f5?pvs=4 "Django")  
+Notion : Lectures / [Django](https://wozlsla.com/Django-105d382c218d807da80adc811e5ac0f5 "Django")  
