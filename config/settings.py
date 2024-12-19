@@ -38,6 +38,7 @@ ALLOWED_HOSTS = []
 THIRD_PARTY_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
+    "strawberry.django",
 ]
 
 CUSTOM_APPS = [
